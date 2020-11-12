@@ -22,6 +22,31 @@ iCimulator allows us to use camera functions on iOS Simulator!
 
 Support for **AVFoundation** & **UIImagePickerController** !
 
+## Pre-installation 🚨
+
+#### Python 3
+https://opensource.com/article/19/5/python-3-default-mac
+Aqui te explican cómo cambiar de manera correcta la versión de python.
+
+#### Brew & OpenCV
+Forma correcta de instalar brew 🍺
+
+https://www.datacamp.com/community/tutorials/homebrew-install-use?utm_source=adwords_ppc&utm_campaignid=1455363063&utm_adgroupid=65083631748&utm_device=c&utm_keyword=&utm_matchtype=b&utm_network=g&utm_adpostion=&utm_creative=278443377086&utm_targetid=dsa-429603003980&utm_loc_interest_ms=&utm_loc_physical_ms=20261&gclid=CjwKCAiA17P9BRB2EiwAMvwNyATgw764ctrQV9eGvrJwuAl0jaQoC2QLShINg_MKdDRvOwQ8M0TB7RoCuTAQAvD_BwE
+
+
+Dependencias de brew usadas en el proyecto:
+brew install opencv
+
+
+#### Python libraries to run `server.py`
+Instalación de librerías necesarias en python (Puede ser pip o pip3 dependiendo de la instalación.):
+sudo python -m pip install wheel (ejemplo en caso de que no se tengan los permisos de escritura)
+
+pip3 install image
+pip3 install pandas
+pip3 install wheel
+
+
 ## Installation 🎈
 
 #### CocoaPods
