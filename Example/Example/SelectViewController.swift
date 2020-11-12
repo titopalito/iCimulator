@@ -10,7 +10,7 @@ import UIKit
 
 class SelectViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    private weak var cameraPicker: UIImagePickerController?
+    private var cameraPicker: UIImagePickerController?
     
     @IBAction func launchImagePicker(_ sender: Any) {
 //        let imagePicker = UIImagePickerController()
@@ -32,6 +32,10 @@ class SelectViewController: UIViewController, UIImagePickerControllerDelegate, U
         if let pickedImage = info[.originalImage] as? UIImage {
 //            cameraView.contentMode = .scaleAspectFit
 //            cameraView.image = pickedImage
+            if let imagePicked = pickedImage.ciImage {
+                let newImage = UIImage(ciImage: imagePicked)
+                print(newImage)
+            }
         }
         self.cameraPicker?.dismiss(animated: true, completion: nil)
     }
